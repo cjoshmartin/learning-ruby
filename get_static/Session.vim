@@ -9,7 +9,6 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 ~/Documents/projects/learning-ruby/get_static
-badd +12 config/routes.rb
 badd +12 app/controllers/static_pages_controller.rb
 badd +3 app/views/static_pages/home.html.erb
 badd +1 app/views/static_pages/help.html.erb
@@ -17,10 +16,11 @@ badd +16 test/controllers/static_pages_controller_test.rb
 badd +5 app/views/static_pages/about.html.erb
 badd +4 app/views/layouts/application.html.erb
 badd +2 app/views/static_pages/contact.html.erb
+badd +9 app/helpers/application_helper.rb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
-edit config/routes.rb
+edit app/views/static_pages/home.html.erb
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
