@@ -17,7 +17,7 @@ badd +5 app/views/static_pages/about.html.erb
 badd +19 app/views/layouts/application.html.erb
 badd +2 app/views/static_pages/contact.html.erb
 badd +9 app/helpers/application_helper.rb
-badd +44 Gemfile
+badd +47 Gemfile
 badd +100 app/assets/stylesheets/custom.scss
 badd +13 app/views/layouts/_footer.html.erb
 badd +12 app/views/layouts/_header.html.erb
@@ -25,7 +25,7 @@ badd +10 config/routes.rb
 badd +4 app/controllers/users_controller.rb
 badd +3 app/views/users/new.html.erb
 badd +39 test/models/user_test.rb
-badd +3 app/models/user.rb
+badd +10 app/models/user.rb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
