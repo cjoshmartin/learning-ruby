@@ -9,23 +9,17 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 ~/Documents/projects/learning-ruby/get_static
-badd +12 app/controllers/static_pages_controller.rb
-badd +5 app/views/static_pages/home.html.erb
-badd +1 app/views/static_pages/help.html.erb
-badd +16 test/controllers/static_pages_controller_test.rb
-badd +5 app/views/static_pages/about.html.erb
-badd +19 app/views/layouts/application.html.erb
-badd +2 app/views/static_pages/contact.html.erb
-badd +9 app/helpers/application_helper.rb
-badd +47 Gemfile
-badd +100 app/assets/stylesheets/custom.scss
+badd +1 app/assets/stylesheets/custom.scss
 badd +13 app/views/layouts/_footer.html.erb
 badd +12 app/views/layouts/_header.html.erb
-badd +10 config/routes.rb
-badd +4 app/controllers/users_controller.rb
+badd +11 config/routes.rb
+badd +9 app/controllers/users_controller.rb
 badd +3 app/views/users/new.html.erb
 badd +39 test/models/user_test.rb
-badd +10 app/models/user.rb
+badd +11 app/models/user.rb
+badd +1 app/assets/config/manifest.js
+badd +11 app/views/users/show.html.erb
+badd +6 app/helpers/users_helper.rb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
@@ -52,7 +46,7 @@ normal! zt
 23
 normal! 025|
 lcd ~/Documents/projects/learning-ruby/get_static
-tabedit ~/Documents/projects/learning-ruby/get_static/app/models/user.rb
+tabedit ~/Documents/projects/learning-ruby/get_static/app/assets/stylesheets/custom.scss
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
