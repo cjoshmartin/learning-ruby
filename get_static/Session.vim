@@ -11,10 +11,10 @@ set shortmess=aoO
 badd +1 ~/Documents/projects/learning-ruby/get_static
 badd +14 config/routes.rb
 badd +10 app/controllers/static_pages_controller.rb
-badd +2 app/views/static_pages/home.html.erb
-badd +2 app/views/static_pages/help.html.erb
-badd +19 test/controllers/static_pages_controller_test.rb
-badd +0 app/views/static_pages/about.html.erb
+badd +10 app/views/static_pages/home.html.erb
+badd +6 app/views/static_pages/help.html.erb
+badd +22 test/controllers/static_pages_controller_test.rb
+badd +4 app/views/static_pages/about.html.erb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
