@@ -14,11 +14,12 @@ badd +9 app/views/static_pages/home.html.erb
 badd +1 app/views/static_pages/help.html.erb
 badd +16 test/controllers/static_pages_controller_test.rb
 badd +5 app/views/static_pages/about.html.erb
-badd +30 app/views/layouts/application.html.erb
+badd +19 app/views/layouts/application.html.erb
 badd +2 app/views/static_pages/contact.html.erb
 badd +9 app/helpers/application_helper.rb
 badd +44 Gemfile
-badd +0 app/assets/stylesheets/custom.scss
+badd +69 app/assets/stylesheets/custom.scss
+badd +13 app/views/layouts/_footer.html.erb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
@@ -38,11 +39,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 29) / 59)
+let s:l = 79 - ((0 * winheight(0) + 0) / 1)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+79
 normal! 0
 lcd ~/Documents/projects/learning-ruby/get_static
 tabnext 1
