@@ -23,11 +23,13 @@ badd +13 app/views/layouts/_footer.html.erb
 badd +12 app/views/layouts/_header.html.erb
 badd +10 config/routes.rb
 badd +4 app/controllers/users_controller.rb
-badd +1 app/views/users/new.html.erb
+badd +3 app/views/users/new.html.erb
+badd +15 test/models/user_test.rb
+badd +4 app/models/user.rb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
-edit app/views/users/new.html.erb
+edit test/models/user_test.rb
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
