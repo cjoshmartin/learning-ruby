@@ -24,12 +24,35 @@ badd +12 app/views/layouts/_header.html.erb
 badd +10 config/routes.rb
 badd +4 app/controllers/users_controller.rb
 badd +3 app/views/users/new.html.erb
-badd +15 test/models/user_test.rb
-badd +4 app/models/user.rb
+badd +39 test/models/user_test.rb
+badd +3 app/models/user.rb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
 edit test/models/user_test.rb
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 23 - ((22 * winheight(0) + 29) / 59)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+23
+normal! 025|
+lcd ~/Documents/projects/learning-ruby/get_static
+tabedit ~/Documents/projects/learning-ruby/get_static/app/models/user.rb
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -52,7 +75,7 @@ normal! zt
 1
 normal! 0
 lcd ~/Documents/projects/learning-ruby/get_static
-tabnext 1
+tabnext 2
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
