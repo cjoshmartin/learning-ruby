@@ -14,11 +14,11 @@ badd +10 app/controllers/static_pages_controller.rb
 badd +10 app/views/static_pages/home.html.erb
 badd +6 app/views/static_pages/help.html.erb
 badd +22 test/controllers/static_pages_controller_test.rb
-badd +4 app/views/static_pages/about.html.erb
+badd +12 app/views/static_pages/about.html.erb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
-edit app/views/static_pages/about.html.erb
+edit test/controllers/static_pages_controller_test.rb
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
