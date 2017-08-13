@@ -10,7 +10,7 @@ endif
 set shortmess=aoO
 badd +1 ~/Documents/projects/learning-ruby/get_static
 badd +12 app/controllers/static_pages_controller.rb
-badd +9 app/views/static_pages/home.html.erb
+badd +5 app/views/static_pages/home.html.erb
 badd +1 app/views/static_pages/help.html.erb
 badd +16 test/controllers/static_pages_controller_test.rb
 badd +5 app/views/static_pages/about.html.erb
@@ -18,12 +18,16 @@ badd +19 app/views/layouts/application.html.erb
 badd +2 app/views/static_pages/contact.html.erb
 badd +9 app/helpers/application_helper.rb
 badd +44 Gemfile
-badd +69 app/assets/stylesheets/custom.scss
+badd +100 app/assets/stylesheets/custom.scss
 badd +13 app/views/layouts/_footer.html.erb
+badd +12 app/views/layouts/_header.html.erb
+badd +10 config/routes.rb
+badd +4 app/controllers/users_controller.rb
+badd +1 app/views/users/new.html.erb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
-edit app/assets/stylesheets/custom.scss
+edit app/views/users/new.html.erb
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -39,11 +43,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 79 - ((0 * winheight(0) + 0) / 1)
+let s:l = 1 - ((0 * winheight(0) + 29) / 59)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-79
+1
 normal! 0
 lcd ~/Documents/projects/learning-ruby/get_static
 tabnext 1
