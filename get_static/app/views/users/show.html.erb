@@ -5,6 +5,7 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <a href="mailto:<%= @user.email %>"> <%= @user.email %> </a>
       </h1>
     </section>
   </aside>

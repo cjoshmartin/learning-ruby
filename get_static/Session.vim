@@ -9,7 +9,7 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +1 ~/Documents/projects/learning-ruby/get_static
-badd +1 app/assets/stylesheets/custom.scss
+badd +135 app/assets/stylesheets/custom.scss
 badd +13 app/views/layouts/_footer.html.erb
 badd +12 app/views/layouts/_header.html.erb
 badd +11 config/routes.rb
@@ -18,8 +18,8 @@ badd +3 app/views/users/new.html.erb
 badd +39 test/models/user_test.rb
 badd +11 app/models/user.rb
 badd +1 app/assets/config/manifest.js
-badd +11 app/views/users/show.html.erb
-badd +6 app/helpers/users_helper.rb
+badd +10 app/views/users/show.html.erb
+badd +7 app/helpers/users_helper.rb
 argglobal
 silent! argdel *
 $argadd ~/Documents/projects/learning-ruby/get_static
@@ -39,14 +39,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 23 - ((22 * winheight(0) + 29) / 59)
+let s:l = 23 - ((21 * winheight(0) + 28) / 57)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 23
 normal! 025|
 lcd ~/Documents/projects/learning-ruby/get_static
-tabedit ~/Documents/projects/learning-ruby/get_static/app/assets/stylesheets/custom.scss
+tabedit ~/Documents/projects/learning-ruby/get_static/app/views/users/show.html.erb
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -62,7 +62,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 29) / 59)
+let s:l = 1 - ((0 * winheight(0) + 28) / 57)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
